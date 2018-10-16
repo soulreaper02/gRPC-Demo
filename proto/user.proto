@@ -1,0 +1,27 @@
+syntax = "proto3"; //Specify proto3 version.
+
+package user; // optional package name
+
+service UserService {
+    rpc List (Empty) returns (UserList);
+    rpc Insert (User) returns (Empty);
+    rpc Get (UserId) returns (UserList);
+    rpc Remove (UserId) returns (Empty);
+}
+
+// Message type defination  for an users
+message User {
+    int32 user_id = 1;
+    string name = 2;
+    string email = 3;
+}
+
+message UserList {
+    repeated User user = 1;
+}
+
+message UserId {
+    int32 user_id = 1;
+}
+
+message Empty {}

@@ -1,0 +1,21 @@
+{
+  "name": "grpcnode",
+  "version": "1.0.0",
+  "description": "A gRPC implementation with node",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gRPC",
+    "protocol_buffer"
+  ],
+  "author": "Amit Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "grpc": "^1.15.1",
+    "mongoose": "^5.3.4",
+    "save": "^2.3.2"
+  }
+}
